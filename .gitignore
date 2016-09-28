@@ -1,0 +1,7 @@
+dist
+.idea
+bower_components/
+node_modules/
+/coverage
+*.log
+npm-debug.log*

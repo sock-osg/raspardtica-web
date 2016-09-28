@@ -1,0 +1,25 @@
+{
+  "name": "raspardtica",
+  "version": "1.0.0",
+  "description": "Web version for Raspardtika project",
+  "main": "index.js",
+  "scripts": {
+    "build": "stylus ",
+    "start": "http-server -a localhost -p 8000 -c-1",
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sock-osg/raspardtica-web.git"
+  },
+  "author": "sock.sqt@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sock-osg/raspardtica-web/issues"
+  },
+  "homepage": "https://github.com/sock-osg/raspardtica-web#readme",
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "http-server": "^0.9.0"
+  }
+}
