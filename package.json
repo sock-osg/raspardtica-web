@@ -2,7 +2,6 @@
   "name": "raspardtica",
   "version": "1.0.0",
   "description": "Web version for Raspardtika project",
-  "main": "index.js",
   "scripts": {
     "build": "stylus ",
     "start": "http-server -a localhost -p 8000 -c-1",

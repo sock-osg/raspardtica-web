@@ -3,7 +3,7 @@
     function alreadyLogged($q, $rootScope, $location, userFactory, alert, errorMessage) {
       var deferred = $q.defer();
 
-      if ($rootScope.user) {
+      //if ($rootScope.user) {
         var params = { email: $rootScope.user.email, password: $rootScope.user.password };
         userFactory.loginUser(params, function (result) {
           if ($rootScope.sid != null || $rootScope.sid != "") {
@@ -29,9 +29,9 @@
           $rootScope.message = errorMessage.UNSUCCESSFUL_LOGIN;
           $location.path('/');
         });
-      } else {
+      /*} else {
         $location.path('/');
-      }
+      }*/
 
       if ($rootScope.sid != null || $rootScope.sid != "") {
         deferred.resolve(true);
@@ -55,6 +55,14 @@
         resolve: {
           alreadyLogged: alreadyLogged
         }
+      })
+      .when('/devices', {
+        templateUrl: 'app/templates/devices.html',
+        controller: 'deviceController',
+        controllerAs: 'devices',
+        /*resolve: {
+          alreadyLogged: alreadyLogged
+        }*/
       })
       .otherwise({
         redirectTo: '/login'
