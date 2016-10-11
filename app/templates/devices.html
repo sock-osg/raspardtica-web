@@ -1,9 +1,11 @@
 <h2>My Devices</h2>
 
-<article class="panel panel-default" ng-repeat="device in devices">
-  <div class="panel-heading">{{device.alias}}</div>
-  <div class="panel-body">
-    {{device.description}}
-  </div>
-  <button type="button" class="btn btn-default navbar-btn">Stop</button>
-</article>
+<div class="container">
+  <article class="panel panel-default col-xs-12 col-md-6 col-xg-4 panel-device" ng-repeat="device in devices">
+    <div class="panel-heading">{{device.alias}}</div>
+    <div class="panel-body">
+      <h3>{{device.description}}</h3>
+      <button type="button" class="btn btn-default navbar-btn">Stop</button>  
+    </div>
+  </article>
+</div>

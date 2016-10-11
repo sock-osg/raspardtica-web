@@ -4,3 +4,7 @@
 .btn-add-device {
   border-radius: 50%;
 }
+.panel-device {
+  padding-left: 0;
+  padding-right: 0;
+}
