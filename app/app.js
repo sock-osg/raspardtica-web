@@ -3,5 +3,5 @@
 })();
 
 var appConfig = {
-  apiUrl: 'http://127.0.0.1:8080/api/'
+  apiUrl: 'http://0.0.0.0:8080/api/'
 };

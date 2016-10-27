@@ -48,14 +48,14 @@
         controller: 'LoginController',
         controllerAs: 'login'
       })
-    .when('/welcome', {
-        templateUrl: 'app/templates/welcome.html',
-        controller: 'WelcomeController',
-        controllerAs: 'welcome',
-        resolve: {
-          alreadyLogged: alreadyLogged
-        }
-      })
+      .when('/welcome', {
+          templateUrl: 'app/templates/welcome.html',
+          controller: 'WelcomeController',
+          controllerAs: 'welcome',
+          resolve: {
+            alreadyLogged: alreadyLogged
+          }
+        })
       .when('/devices', {
         templateUrl: 'app/templates/devices.html',
         controller: 'deviceController',
@@ -64,6 +64,14 @@
           alreadyLogged: alreadyLogged
         }*/
       })
+      .when('/add-device', {
+          templateUrl: 'app/templates/add-device.html',
+          controller: 'deviceController',
+          controllerAs: 'devices',
+          resolve: {
+            alreadyLogged: alreadyLogged
+          }
+        })
       .otherwise({
         redirectTo: '/login'
       })

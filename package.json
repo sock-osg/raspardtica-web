@@ -4,7 +4,7 @@
   "description": "Web version for Raspardtika project",
   "scripts": {
     "build": "stylus app/css",
-    "start": "http-server -a 10.0.0.10 -p 8000 -c-1",
+    "start": "http-server -a 0.0.0.0 -p 8000 -c-1",
     "test": "npm test"
   },
   "repository": {
